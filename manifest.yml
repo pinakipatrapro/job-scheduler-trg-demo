@@ -1,0 +1,10 @@
+---
+applications:
+- name: job-scheduler-trg-demo
+  path: .
+  memory: 128M
+  buildpacks:
+    - nodejs_buildpack
+  services:
+    - xsuaa-dummy
+    - job-scheduler
